@@ -1,11 +1,15 @@
-import React from "react"
+import React from "react";
 import Home from "./Home";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-
-const Root = () =>{
+const Root = () => {
   return (
-  <Home/>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
 export default Root;
