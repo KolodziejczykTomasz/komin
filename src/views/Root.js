@@ -1,14 +1,20 @@
 import React from "react";
-import Home from "./Home";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { theme } from "../assets/styles/theme";
+import GlobalStyle from "../assets/styles/GlobalStyle";
+import Navigation from "../components/navigation/navigation";
+import About from "../components/about"
+import Footer from "../components/footer";
+
 
 const Root = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" component={Home} />
-      </Switch>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Navigation />
+    <About />
+      <Footer />
+    </ThemeProvider>
   );
 };
 

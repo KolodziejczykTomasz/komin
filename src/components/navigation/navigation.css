@@ -1,0 +1,40 @@
+.navbar {
+  padding:0rem;
+  margin-bottom:2rem;
+  text-transform: uppercase;
+}
+
+.dropdown .dropdown-menu {
+  border-radius:0;
+ }
+
+.navbar-brand {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+color: white;
+}
+
+.Navi_Title_Start {
+ text-transform: uppercase;
+font-weight: 500;
+padding: 10px 10px;
+
+}
+
+.Navi_Title_End {
+  text-align: end;
+text-transform: uppercase;
+font-weight: 500;
+padding: 10px 10px;
+}
+
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  border-radius:0;
+ }
+}
