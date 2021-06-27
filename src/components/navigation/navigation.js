@@ -1,15 +1,14 @@
 import React from "react";
+import Logo from "../../assets/images/logo.png";
 import "./navigation.css";
 
 const Navigation = () => (
-  <>
-    <div class="navbar-brand">
-      <span class="Navi_Title_Start">
-        Zakład Usług Kominiarskich Andrzej Jankowski
-      </span>
-      <span class="Navi_Title_End">
-        89 767 00 00
-      </span>
+<>
+    <div class="navbar_brand">
+      <div class="navi_Title_Start">
+        <span style={{paddingRight: "10px"}}>Zakład Usług Kominiarskich</span> <span>Andrzej Jankowski</span>
+      </div>
+      <div class="navi_Title_End">89 767 00 00</div>
     </div>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
@@ -27,9 +26,12 @@ const Navigation = () => (
         </button>
       </div>
 
-      <div class="collapse navbar-collapse flex-column " id="navbar">
-        <ul class="navbar-nav  w-100 justify-content-center px-3">
-          <li class="nav-item active">
+      <div
+        class="collapse navbar-collapse flex-column"
+        id="navbar"
+      >
+        <ul class="navbar-nav  w-100 justify-content-center" style={{marginTop: "20px"}}>
+          <li class="nav-item active ">
             <a class="nav-link" href="#">
               Strona główna
             </a>
@@ -39,6 +41,9 @@ const Navigation = () => (
               O mnie
             </a>
           </li>
+          <li class="Logo" style={{marginTop: "-12px", marginLeft: "10px", marginRight: "10px"}}>
+            <img class="Logo" src={Logo} alt="Logo" width="80" height="74" />
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">
               Oferta
@@ -47,14 +52,6 @@ const Navigation = () => (
           <li class="nav-item active">
             <a class="nav-link" href="#">
               Kontakt
-            </a>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav justify-content-center w-100 bg-secondary px-3">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home <span class="sr-only">(current)</span>
             </a>
           </li>
         </ul>

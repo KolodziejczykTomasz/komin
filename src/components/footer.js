@@ -3,6 +3,7 @@ import Iframe from "react-iframe";
 import styled from "styled-components";
 
 const WrapperWide = styled.div`
+  margin-top: 30px;
   width: 100%;
   background-color: black;
 `;
@@ -24,22 +25,22 @@ const Container = styled.div`
   justify-content: space-evenly;
   @media (max-width: 800px) {
     flex-direction: column;
-    
+    width: 100%;
   }
 `;
 
-const Title = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.large};
+const Title = styled.h1`
+  padding-top: 75px;
   padding-bottom: 40px;
 `;
 
 const Subtitle = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.medium}; 
+  font-size: ${({ theme }) => theme.fontSizes.medium};
   margin: 0;
   padding: 0;
   @media (max-width: 800px) {
     text-align: center;
-  } 
+  }
 `;
 
 const WrapperContact = styled.div`
@@ -48,7 +49,6 @@ const WrapperContact = styled.div`
         width: 100%;
   }
 `;
-
 
 const WrapperContactListAdress = styled.ul`
   list-style: none;
@@ -73,7 +73,6 @@ const WrapperContactList = styled.ul`
     line-height: 36px;
   }
 `;
-
 
 const WrapperMap = styled.div`
   width: 55%;

@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const WrapperWide = styled.div`
-  width: 100%;
-  background-color: black;
+  width: 100%;  
 `;
 
 const WrapperShort = styled.div`
@@ -12,10 +11,12 @@ const WrapperShort = styled.div`
   max-width: 1290px;
   margin: 0 auto;
   padding: 75px 0;
-  color: white;
+  color: ${({ theme }) => theme.colors.black};
 `;
 const Subtitle = styled.span`
+display: block;
   font-size: ${({ theme }) => theme.fontSizes.medium};
+  margin-bottom: 50px;
 `;
 
 const Container = styled.div`
@@ -23,7 +24,7 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   @media (max-width: 800px) {
         grid-template-columns: 1fr;
   }

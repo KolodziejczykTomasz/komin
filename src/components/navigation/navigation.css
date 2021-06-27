@@ -1,40 +1,51 @@
-.navbar {
-  padding:0rem;
-  margin-bottom:2rem;
-  text-transform: uppercase;
+.Logo {  
+  background-color: gray;
+border-radius: 50px;
 }
 
-.dropdown .dropdown-menu {
-  border-radius:0;
- }
+.navbar-nav a :nth-of-type(1) {
+ border-right: 1px solid white;
+}
 
-.navbar-brand {
+
+.navbar-nav {
+   margin-bottom: -12px;
+  align-self: center;  
+}
+
+
+.navbar {
+  align-items: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+.navbar_brand {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 100%;
-color: white;
+  color: grey;
+  background-color: black;
+  border-bottom: 2px solid white;
 }
 
-.Navi_Title_Start {
- text-transform: uppercase;
-font-weight: 500;
-padding: 10px 10px;
 
+.navi_Title_Start {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 10px;
+  width:100%;
 }
 
-.Navi_Title_End {
+
+   
+.navi_Title_End { 
   text-align: end;
 text-transform: uppercase;
 font-weight: 500;
 padding: 10px 10px;
+width:100%;
 }
 
-/* Medium devices (tablets, 768px and up) 
-The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-  border-radius:0;
- }
-}
+
+
