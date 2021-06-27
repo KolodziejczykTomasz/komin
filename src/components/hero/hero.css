@@ -1,18 +1,44 @@
 
  .carousel-caption {
-     background-color: rgba(128, 128, 128, 0.648); 
-top: 24%;
-  left: 0;
-  width: 300px;
-  height: auto;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.648); 
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 92%;
+    align-items: center;
  }
+
+
+ .carousel-caption p {
+    padding-top: 20px;  
+ }
+
 
 .d-block {
     display: block;
     position: relative;
-    height: 500px;
+    height: 550px;
     width: auto;
     object-fit: cover;
     z-index: 0;  
 }
 
+.button_hero {
+    background-color: #d2ad36;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 15px 0;
+    padding:7px 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    transition: .2s;
+}
+
+ .button_hero:hover{
+    color: #d2ad36;
+    background-color: white;
+}

@@ -1,14 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import "./navigation.css";
 
 const Navigation = () => (
-<>
+  <>
     <div class="navbar_brand">
       <div class="navi_Title_Start">
-        <span style={{paddingRight: "10px"}}>Zakład Usług Kominiarskich</span> <span>Andrzej Jankowski</span>
+        <span style={{ paddingRight: "10px" }}>Zakład Usług Kominiarskich</span>{" "}
+        <span style={{ color: "#d2ad36" }}>Andrzej Jankowski</span>
       </div>
-      <div class="navi_Title_End">89 767 00 00</div>
+      <div class="navi_Title_End">+ 48 89 767 00 00</div>
     </div>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
@@ -16,8 +18,8 @@ const Navigation = () => (
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
           aria-controls="navbarTogglerDemo02"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -26,33 +28,40 @@ const Navigation = () => (
         </button>
       </div>
 
-      <div
-        class="collapse navbar-collapse flex-column"
-        id="navbar"
-      >
-        <ul class="navbar-nav  w-100 justify-content-center" style={{marginTop: "20px"}}>
+      <div class="collapse navbar-collapse flex-column" id="navbar">
+        <ul
+          class="navbar-nav  w-100 justify-content-center"
+          style={{ marginTop: "20px" }}
+        >
           <li class="nav-item active ">
-            <a class="nav-link" href="#">
+            <Link to="/" class="nav-link">
               Strona główna
-            </a>
+            </Link>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">
-              O mnie
-            </a>
+            <Link to="/" class="nav-link">
+              Firma
+            </Link>
           </li>
-          <li class="Logo" style={{marginTop: "-12px", marginLeft: "10px", marginRight: "10px"}}>
+          <li
+            class="Logo"
+            style={{
+              marginTop: "-12px",
+              marginLeft: "10px",
+              marginRight: "10px",
+            }}
+          >
             <img class="Logo" src={Logo} alt="Logo" width="80" height="74" />
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <Link to="/" class="nav-link">
               Oferta
-            </a>
+            </Link>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <Link to="/" class="nav-link">
               Kontakt
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

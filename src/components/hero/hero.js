@@ -14,8 +14,9 @@ const Hero = () => (
         <img className="d-block w-100" src={Hero1} alt="First slide" />
         <Carousel.Caption>
           <div classname="heroCaption">
-            <h1>Czy wiesz, że kominiarz przynosi szczęście?</h1>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1 style={{fontWeight: 600}}>Czy wiesz, że kominiarz przynosi szczęście?</h1>
+            <p>Zapoznaj się z moją ofertą</p>
+            <button className="button_hero">Czytaj</button>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -24,8 +25,9 @@ const Hero = () => (
 
         <Carousel.Caption>
           <div classname="heroCaption">
-            <h1>Czy wiesz, że kominiarz przynosi szczęście?</h1>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1 style={{fontWeight: 600}}>Czy wiesz, że kominiarz przynosi szczęście?</h1>
+            <p>Zapoznaj się z moją ofertą</p>
+            <button className="button_hero">Czytaj</button>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -34,8 +36,9 @@ const Hero = () => (
 
         <Carousel.Caption>
           <div classname="heroCaption">
-            <h1>Czy wiesz, że kominiarz przynosi szczęście?</h1>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h1 style={{fontWeight: 600}}>Czy wiesz, że kominiarz przynosi szczęście?</h1>
+            <p>Zapoznaj się z moją ofertą</p>
+            <button className="button_hero">Czytaj</button>
           </div>
         </Carousel.Caption>
       </Carousel.Item>

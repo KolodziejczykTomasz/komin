@@ -35,7 +35,9 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.medium};
+  font-size: 24px;
+  color: #d2ad36;
+  font-weight: 700;
   margin: 0;
   padding: 0;
   @media (max-width: 800px) {
@@ -146,7 +148,7 @@ const Footer = () => (
         <div>Copyright © {new Date().getFullYear()}</div>
         <div>
           Webside developed by
-          <span> NETTOM</span>
+          <span style={{ color: "#d2ad36", fontWeight: 600 }}> NETTOM</span>
         </div>
       </ContentCopyright>
     </WrapperShort>

@@ -24,7 +24,8 @@ border-radius: 50px;
 .navbar_brand {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  color: grey;
+  color: grey;  
+  font-weight: 600;
   background-color: black;
   border-bottom: 2px solid white;
 }
@@ -35,17 +36,38 @@ border-radius: 50px;
   font-weight: 500;
   padding: 10px 10px;
   width:100%;
+  font-weight: 600;
 }
 
+.nav-link:hover{
+ border-bottom: 4px solid #d2ad36;
+}
 
-   
+.nav-link {
+  letter-spacing: 1.3px;
+  transition: 0.2s;
+}
+
 .navi_Title_End { 
   text-align: end;
 text-transform: uppercase;
-font-weight: 500;
+font-weight: 600;
 padding: 10px 10px;
 width:100%;
 }
 
+@media(max-width: 800px) { 
+   .navbar_brand {
+      grid-template-columns: 1fr;
+      padding: 0;
+       text-align: center;
+   }  
+ }
 
+ @media(max-width: 800px) { 
+   .navi_Title_End {
+       text-align: center;
+       padding: 0 0 10px 0;
 
+   }  
+  }
