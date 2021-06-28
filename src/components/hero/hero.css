@@ -10,6 +10,8 @@
  }
 
 
+
+
  .carousel-caption p {
     padding-top: 20px;  
  }
@@ -27,6 +29,7 @@
 .button_hero {
     background-color: #d2ad36;
     border: none;
+    color: white;
     text-transform: uppercase;
     cursor: pointer;
     margin: 15px 0;
@@ -41,4 +44,9 @@
  .button_hero:hover{
     color: #d2ad36;
     background-color: white;
+}
+
+.link-hero:hover{
+    text-decoration: none;
+    color: #d2ad36;  
 }

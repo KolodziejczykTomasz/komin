@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import { HashLink as Link } from "react-router-hash-link";
 
 import "./hero.css";
 
@@ -14,9 +15,13 @@ const Hero = () => (
         <img className="d-block w-100" src={Hero1} alt="First slide" />
         <Carousel.Caption>
           <div classname="heroCaption">
-            <h1 style={{fontWeight: 600}}>Czy wiesz, że kominiarz przynosi szczęście?</h1>
+            <h1 style={{ fontWeight: 600 }}>
+              Czy wiesz, że kominiarz przynosi szczęście?
+            </h1>
             <p>Zapoznaj się z moją ofertą</p>
-            <button className="button_hero">Czytaj</button>
+            <Link to={{ hash: "#about" }} className="link-hero">
+              <button className="button_hero">Czytaj</button>{" "}
+            </Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -25,9 +30,14 @@ const Hero = () => (
 
         <Carousel.Caption>
           <div classname="heroCaption">
-            <h1 style={{fontWeight: 600}}>Czy wiesz, że kominiarz przynosi szczęście?</h1>
+            <h1 style={{ fontWeight: 600 }}>
+              Czy wiesz, że kominiarz przynosi szczęście?
+            </h1>
             <p>Zapoznaj się z moją ofertą</p>
-            <button className="button_hero">Czytaj</button>
+
+            <Link to={{ hash: "#about" }} className="link-hero">
+              <button className="button_hero">Czytaj</button>{" "}
+            </Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -36,9 +46,13 @@ const Hero = () => (
 
         <Carousel.Caption>
           <div classname="heroCaption">
-            <h1 style={{fontWeight: 600}}>Czy wiesz, że kominiarz przynosi szczęście?</h1>
+            <h1 style={{ fontWeight: 600 }}>
+              Czy wiesz, że kominiarz przynosi szczęście?
+            </h1>
             <p>Zapoznaj się z moją ofertą</p>
-            <button className="button_hero">Czytaj</button>
+            <Link to={{ hash: "#about" }} className="link-hero">
+              <button className="button_hero">Czytaj</button>{" "}
+            </Link>
           </div>
         </Carousel.Caption>
       </Carousel.Item>

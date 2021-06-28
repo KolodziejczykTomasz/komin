@@ -35,7 +35,7 @@ const ContentLeft = styled.div`padding: 10px 10px;`
 const ContentRight = styled.div`padding: 10px 10px;`
 
 const About = () => (
-  <WrapperWide>
+  <WrapperWide id="about">
     <WrapperShort>
       <Container>
         <ContentLeft>

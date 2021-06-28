@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import Iframe from "react-iframe";
 import styled from "styled-components";
 
@@ -33,6 +33,9 @@ const Container = styled.div`
 const Title = styled.h1`
   padding-top: 75px;
   padding-bottom: 40px;
+  @media (max-width: 800px) {
+        padding-left: 10px;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -42,7 +45,8 @@ const Subtitle = styled.p`
   margin: 0;
   padding: 0;
   @media (max-width: 800px) {
-    text-align: center;
+    text-align: left;
+    padding-left: 50px;
   }
 `;
 
@@ -55,25 +59,27 @@ const WrapperContact = styled.div`
 
 const WrapperContactListAdress = styled.ul`
   list-style: none;
-  margin-left: -30px;
+  margin-left: -80px;
   font-size: 18px;
   padding-top: 30px;
   @media (max-width: 800px) {
     text-align: center;
     font-size: 22px;
     line-height: 36px;
+    margin-left: -30px;
   }
 `;
 
 const WrapperContactList = styled.ul`
   list-style: none;
-  margin-left: -30px;
+  margin-left: -80px;
   font-size: 18px;
   padding-bottom: 50px;
   @media (max-width: 800px) {
     text-align: center;
     font-size: 20px;
     line-height: 36px;
+    margin-left: -30px;
   }
 `;
 
@@ -132,7 +138,7 @@ const WrapperMenuBottomListItem = styled.li`
 `;
 
 const Footer = () => (
-  <WrapperWide>
+  <WrapperWide id="contact">
     <WrapperShort>
       <ContentContact>
         <Container>
@@ -164,7 +170,8 @@ const Footer = () => (
                 width="100%"
                 height="300"
                 allowfullscreen=""
-                loading="lazy"></Iframe>
+                loading="lazy"
+              ></Iframe>
             </div>
           </WrapperMap>
         </Container>
@@ -173,14 +180,14 @@ const Footer = () => (
         <WrapperMenuBottom>
           <WrapperMenuBottomList>
             <WrapperMenuBottomListItem>
-              <Link to="/">Strona główna</Link>
+              <Link to="/#home">Strona główna</Link>
             </WrapperMenuBottomListItem>
             <WrapperMenuBottomListItem>
-              <Link to="/">Firma</Link>
+              <Link to="/#about">Firma</Link>
             </WrapperMenuBottomListItem>
             <WrapperMenuBottomListItem>
-              <Link to="/">Oferta</Link>
-            </WrapperMenuBottomListItem>            
+              <Link to="/#about">Oferta</Link>
+            </WrapperMenuBottomListItem>
           </WrapperMenuBottomList>
         </WrapperMenuBottom>
         <div>Copyright © {new Date().getFullYear()}</div>
