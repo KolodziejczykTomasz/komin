@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
 import styled from "styled-components";
 
@@ -110,6 +111,26 @@ const ContentCopyright = styled.div`
   }
 `;
 
+const WrapperMenuBottom = styled.div``;
+const WrapperMenuBottomList = styled.ul`
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+`;
+
+const WrapperMenuBottomListItem = styled.li`
+  padding-right: 10px;
+  text-transform: uppercase;
+  & a {
+    color: white;
+  }
+  color: white;
+  & :hover {
+    text-decoration: none;
+    color: #d2ad36;
+  }
+`;
+
 const Footer = () => (
   <WrapperWide>
     <WrapperShort>
@@ -120,13 +141,19 @@ const Footer = () => (
             <Subtitle>Zakład Usług Kominiarskich</Subtitle>
             <Subtitle>Andrzej Jankowski</Subtitle>
             <WrapperContactListAdress>
-              <li>ul. Wiejska 88 lok.4</li>
-              <li>11-100 Lidzbark Warmiński</li>
+              <WrapperMenuBottomList>
+                ul. Wiejska 88 lok.4
+              </WrapperMenuBottomList>
+              <WrapperMenuBottomList>
+                11-100 Lidzbark Warmiński
+              </WrapperMenuBottomList>
             </WrapperContactListAdress>
             <WrapperContactList>
-              <li>Tel. 89 767 00 00</li>
-              <li>Email: poczta@poczta.pl</li>
-              <li>NIP: 7431221399</li>
+              <WrapperMenuBottomList>Tel. 89 767 00 00</WrapperMenuBottomList>
+              <WrapperMenuBottomList>
+                Email: poczta@poczta.pl
+              </WrapperMenuBottomList>
+              <WrapperMenuBottomList>NIP: 7431221399</WrapperMenuBottomList>
             </WrapperContactList>
           </WrapperContact>
           <WrapperMap>
@@ -137,14 +164,25 @@ const Footer = () => (
                 width="100%"
                 height="300"
                 allowfullscreen=""
-                loading="lazy"
-              ></Iframe>
+                loading="lazy"></Iframe>
             </div>
           </WrapperMap>
         </Container>
       </ContentContact>
       <ContentCopyright>
-        <div>Polityka prywatności</div>
+        <WrapperMenuBottom>
+          <WrapperMenuBottomList>
+            <WrapperMenuBottomListItem>
+              <Link to="/">Strona główna</Link>
+            </WrapperMenuBottomListItem>
+            <WrapperMenuBottomListItem>
+              <Link to="/">Firma</Link>
+            </WrapperMenuBottomListItem>
+            <WrapperMenuBottomListItem>
+              <Link to="/">Oferta</Link>
+            </WrapperMenuBottomListItem>            
+          </WrapperMenuBottomList>
+        </WrapperMenuBottom>
         <div>Copyright © {new Date().getFullYear()}</div>
         <div>
           Webside developed by
