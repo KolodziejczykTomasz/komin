@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Montserrat', sans-serif;
   font-size: ${({ theme }) => theme.fontSizes.small};
   color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.darkgrey};;
   }
 `;
 

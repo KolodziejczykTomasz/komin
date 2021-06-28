@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const WrapperWide = styled.div`
-  width: 100%;  
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 const WrapperShort = styled.div`

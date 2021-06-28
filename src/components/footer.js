@@ -5,7 +5,7 @@ import styled from "styled-components";
 const WrapperWide = styled.div`
   margin-top: 30px;
   width: 100%;
-  background-color: black;
+  background-color: #2a2a2a;
 `;
 
 const WrapperShort = styled.div`
