@@ -13,7 +13,7 @@ const Navigation = () => {
           </span>
           <span style={{ color: "#d2ad36" }}>Andrzej Jankowski</span>
         </div>
-        <div class="navi_Title_End">+ 48 89 767 00 00</div>
+        <div class="navi_Title_End">+ 48 602 537 551</div>
       </div>
 
       <nav

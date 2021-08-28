@@ -42,7 +42,7 @@ const Subtitle = styled.p`
   font-size: 24px;
   color: #d2ad36;
   font-weight: 700;
-  margin: 0;
+  margin-left: -20px;
   padding: 0;
   @media (max-width: 800px) {
     text-align: left;
@@ -53,7 +53,7 @@ const Subtitle = styled.p`
 const WrapperContact = styled.div`
   width: 45%;
   @media (max-width: 800px) {
-        width: 100%;
+        width: 100%;   
   }
 `;
 
@@ -117,7 +117,14 @@ const ContentCopyright = styled.div`
   }
 `;
 
-const WrapperMenuBottom = styled.div``;
+const WrapperMenuBottom = styled.div`
+  @media (max-width: 800px) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+`;
 const WrapperMenuBottomList = styled.ul`
   display: flex;
   flex-direction: row;
@@ -144,7 +151,7 @@ const Footer = () => (
         <Container>
           <WrapperContact>
             <Title>Kontakt</Title>
-            <Subtitle>Zakład Usług Kominiarskich</Subtitle>
+            <Subtitle style={{marginBottom: '-10px'}}>Zakład Usług Kominiarskich</Subtitle>
             <Subtitle>Andrzej Jankowski</Subtitle>
             <WrapperContactListAdress>
               <WrapperMenuBottomList>
@@ -155,9 +162,11 @@ const Footer = () => (
               </WrapperMenuBottomList>
             </WrapperContactListAdress>
             <WrapperContactList>
-              <WrapperMenuBottomList>Tel. 89 767 00 00</WrapperMenuBottomList>
               <WrapperMenuBottomList>
-                Email: poczta@poczta.pl
+                Tel. +48 602 537 551
+              </WrapperMenuBottomList>
+              <WrapperMenuBottomList>
+                Email: kominiarzlw@gmail.com
               </WrapperMenuBottomList>
               <WrapperMenuBottomList>NIP: 7431221399</WrapperMenuBottomList>
             </WrapperContactList>
