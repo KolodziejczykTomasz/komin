@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 const WrapperWide = styled.div`
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: rgba(128, 128, 128, 0.648);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 `;
 
 const WrapperShort = styled.div`
@@ -11,75 +14,36 @@ const WrapperShort = styled.div`
   width: 100%;
   max-width: 1290px;
   margin: 0 auto;
-  padding: 75px 0;
-  color: ${({ theme }) => theme.colors.black};
+  padding: 75px 20px;
+  color: ${({ theme }) => theme.colors.white};
 `;
 const Subtitle = styled.span`
-display: block;
-  font-size: ${({ theme }) => theme.fontSizes.medium};
+  display: block;
+  font-size: ${({ theme }) => theme.fontSizes.big};
+  font-weight: 600;
   margin-bottom: 50px;
 `;
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
   margin: 0 auto;
-  width: 90%;
-  @media (max-width: 800px) {
-        grid-template-columns: 1fr;
-  }
+  width: 100%;
+  font-size: ${({ theme }) => theme.fontSizes.content};
 `;
-const ContentLeft = styled.div`padding: 10px 10px;`
-
-const ContentRight = styled.div`padding: 10px 10px;`
 
 const About = () => (
   <WrapperWide id="about">
     <WrapperShort>
       <Container>
-        <ContentLeft>
-          <Subtitle>Kominiarz Andrzej Jankowski do usług</Subtitle>
-          <p>
-            Od 1997 roku pracuję jako rzemiośle kominiarskim. Posiadam niezbędne
-            kwalifikacje uprawniające do zajmowania się eksploatacją urządeń,
-            instalacji i sieci na stanowisku Dozoru, uprawnienia do prac
-            kontrolno-pomiarowych w zakresie badania szczelności urządzeń i
-            instalacji gazowych.
-          </p>
-          <p>
-            Mój Zakład Kominiarski wykonuje usługi kominiarskie dla osób
-            prywatnych, firm, wspólnot mieszkaniowych i instytucji.
-          </p>
-          <p>
-            Udzielam gwarancji na wykonane prace, a nasze usługi świadczymy
-            solidnie i zgodnie z kominiarskim kunsztem. Posiadamy wymagane
-            uprawnienia oraz nowoczesne zaplecze techniczne.
-          </p>
-          <p>
-            Terenem działania jest przede wszystkim Lidzbark Warmiński i jego
-            najbliższe okolice.
-          </p>
-          <p>Potrzebny kominiarz? Zapraszam do kontaktu - Andrzej Jankowski</p>
-        </ContentLeft>
-        <ContentRight>
-          <Subtitle>Zapewniam profesjonalną usuługę w zakresie:</Subtitle>
-          <ul>
-            <li>
-              wykonywania czynności związanych z konserwacją przewodów
-              kominowych
-            </li>
-            <li>wykonywania okresowej kontroli przewodów kominowych</li>
-            <li>
-              sprawdzania stanu technicznego przewodów kominowych oraz
-              podłączenia urządzeń grzewczych i wentylacyjnych do przewodów
-              kominowych
-            </li>
-            <li>
-              sporządzania opinii o stanie technicznym przewodów kominowych
-            </li>
-          </ul>
-        </ContentRight>
+        <Subtitle>Kominiarz Andrzej Jankowski</Subtitle>
+        <p>
+          Zapraszam do współpracy właścicieli domów jednorodzinnych,
+          wielorodzinnych, zarządców nieruchomościami, wspólnoty i spółdzielnie
+          mieszkaniowe.
+        </p>
+        <p>
+          Oferuję usługi kominiarskie na terenie Lidzbarka Warmińskiego oraz
+          pobliskich miejscowości.
+        </p>
       </Container>
     </WrapperShort>
   </WrapperWide>

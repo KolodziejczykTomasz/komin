@@ -53,7 +53,7 @@ const Subtitle = styled.p`
 const WrapperContact = styled.div`
   width: 45%;
   @media (max-width: 800px) {
-        width: 100%;   
+        width: 100%;
   }
 `;
 
@@ -151,7 +151,9 @@ const Footer = () => (
         <Container>
           <WrapperContact>
             <Title>Kontakt</Title>
-            <Subtitle style={{marginBottom: '-10px'}}>Zakład Usług Kominiarskich</Subtitle>
+            <Subtitle style={{ marginBottom: "-10px" }}>
+              Zakład Usług Kominiarskich
+            </Subtitle>
             <Subtitle>Andrzej Jankowski</Subtitle>
             <WrapperContactListAdress>
               <WrapperMenuBottomList>
@@ -179,8 +181,7 @@ const Footer = () => (
                 width="100%"
                 height="300"
                 allowfullscreen=""
-                loading="lazy"
-              ></Iframe>
+                loading="lazy"></Iframe>
             </div>
           </WrapperMap>
         </Container>
@@ -201,8 +202,16 @@ const Footer = () => (
         </WrapperMenuBottom>
         <div>Copyright © {new Date().getFullYear()}</div>
         <div>
-          Webside developed by
-          <span style={{ color: "#d2ad36", fontWeight: 600 }}> NETTOM</span>
+          Webside developed by 
+          <span style={{marginLeft: "5px"}}>
+            <a
+              href="https://nettom24.com/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#d2ad36", fontWeight: 600 }}>
+              NETTOM24
+            </a>
+          </span>
         </div>
       </ContentCopyright>
     </WrapperShort>

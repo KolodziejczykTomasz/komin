@@ -10,8 +10,10 @@ export const theme = {
   },
   fonts: ["Montserrat", "sans-serif"],
   fontSizes: {
-    small: "1em",
-    medium: "2em",
-    large: "3em",
+    small: "1rem",
+    medium: "2rem",
+    big: "2.7rem",
+    large: "3rem",
+    content: "1.8rem"
   },
 };
