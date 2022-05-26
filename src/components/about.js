@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const WrapperWide = styled.div`
   width: 100%;
-  background-color: rgba(128, 128, 128, 0.648);
+  background-color: #2a2a2a;
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -13,7 +13,7 @@ const WrapperShort = styled.div`
   display: block;
   width: 100%;
   max-width: 1290px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   padding: 75px 20px;
   color: ${({ theme }) => theme.colors.white};
 `;

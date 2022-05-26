@@ -14,24 +14,24 @@ const Section = styled.div`
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap-column: 10px;
-  gap-row: 10px;
+  gap: 30px;
   align-items: center;
   justify-items: center;
   width: 100%;
   height: 100%;
   padding: 0 100px;
   @media (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
     justify-content: center;
-    gap-column: 10px;
-    gap-row: 50px;
-    padding: 0 30%;
+    padding: 0 10px;
   }
   @media (max-width: 600px) {
     padding: 0 10px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
   }
@@ -101,7 +101,7 @@ const Offer = () => (
             <IconCheck />
           </WrapperIcon>
         </Icon>
-        <Description>Przegląd kominiarski</Description>
+        <Description> Przegląd kominiarski </Description>
       </Card>
       <Card>
         <Icon>
@@ -109,7 +109,7 @@ const Offer = () => (
             <IconCheck />
           </WrapperIcon>
         </Icon>
-        <Description>Czyszczenie kominów</Description>
+        <Description> Czyszczenie kominów </Description>
       </Card>
       <Card>
         <Icon>
@@ -117,7 +117,7 @@ const Offer = () => (
             <IconCheck />
           </WrapperIcon>
         </Icon>
-        <Description>Opinie kominiarskie</Description>
+        <Description> Opinie kominiarskie </Description>
       </Card>
       <Card>
         <Icon>
@@ -125,7 +125,7 @@ const Offer = () => (
             <IconCheck />
           </WrapperIcon>
         </Icon>
-        <Description>Odbiór kominiarski</Description>
+        <Description> Odbiór kominiarski </Description>
       </Card>
     </Wrapper>
   </Section>

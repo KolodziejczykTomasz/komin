@@ -4,7 +4,6 @@ import Iframe from "react-iframe";
 import styled from "styled-components";
 
 const WrapperWide = styled.div`
-  margin-top: 30px;
   width: 100%;
   background-color: #2a2a2a;
 `;
@@ -202,8 +201,8 @@ const Footer = () => (
         </WrapperMenuBottom>
         <div>Copyright © {new Date().getFullYear()}</div>
         <div>
-          Webside developed by 
-          <span style={{marginLeft: "5px"}}>
+          Webside developed by
+          <span style={{ marginLeft: "5px" }}>
             <a
               href="https://nettom24.com/"
               target="_blank"
